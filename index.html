@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"">
+    <title>черновик</title>
+  </head>
+  <body id="slice">
+    <div class="modalBackground">
+        <div class="modalActive">
+            <div class="modalClose">
+                <img src="./img/modalCross.svg" alt="+" />
+            </div>
+            <div class="modalWindow">
+                <div class="boxNotsCreat">
+                    <input type="text" id="inputGetNots">
+                    <div>
+                    <textarea name="" id="AreaNots"></textarea>      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header header_row">
+      <div class="header__item header__item_width50_centr ">
+        <a href="#main__content-1" class="header__link header__link_margin-left">Домой</a>
+        <a href="#main__content-2" class="header__link header__link_margin-left">Погода</a>
+        <a href="#main__content-3" class="header__link header__link_margin-left">Заметки</a>
+      </div>
+      <div class="header__item header__item_width50_centr header__item_right">
+        <div class="header__geo header__geo_margin-right">
+            <h2 id="valueTemperature" class="header__temperature header__temperature_margin-bottom">23.9</h2>
+            <p id="elementCity" class="header__city header__city_margin-top">Krasnodar</p>
+        </div>
+        <div class="header__weather">
+            <h2 id="weatherStatus" class="header__weather-status">Пасмурно</h2>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+        <div class="main__data main__data_centr_colum">
+            <h1 id="elemHourMinutScond" class="main__time main__time_margin">8:23:99</h1>
+            <h2 id="elemDayMounthDayWeek" class="main__weekday main__weekday_margin">09 сентября, понедельник </h2>
+        </div>
+        <div class="main__tabs">
+            <div id="main__content-1" class="main__tab main__tab_display main__tab_display-block">
+                
+            </div>
+            <div id="main__content-2" class="main__tab main__tab_display">
+                в разработке график погоды на день на канвасе
+            </div>
+            <div id="main__content-3" class="main__tab main__tab_display">
+                <div class="main__title main__title_width">
+                    <button class="main__btn" id="btnDeleteChexbox">Удалить выполненные заметки!</button> 
+                    <button class="main__btn trigger">+Добавить заметку</button>
+                </div>
+                <div id="placeRenderNots" class="main__nots main__nots_elements"></div>
+            </div>
+        </div> 
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
